@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+### 2026-10-10
+
+- Update the venv notes in `CLAUDE.md`. The old venv was built on
+  Python 3.10 and stopped working once 3.10 was removed from the
+  system. The recreated one has `build`, `twine`, and `bumpver`
+  installed, so the notes now say that and show how to recreate it.
+- Drop the `CLAUDE.md` note that release commits use the version as
+  their message (`v0.0.13`). Commits now follow the usual commit
+  message rules, as the 0.0.14 commit did.
+
 ## 0.0.14
 
 ### 2026-10-10

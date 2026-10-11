@@ -19,7 +19,13 @@ The helpers (`get_results`, `sort_results`, `get_sorted_results`, `get_headers`,
 
 ## Commands
 
-The local `venv/` only has pip and wheel; install `build`, `twine`, and `bumpver` into it before using them.
+The local `venv/` (not tracked) has `build`, `twine`, and `bumpver` installed. If it's missing or broken (for example after a system Python upgrade), recreate it:
+
+```sh
+rm -rf venv
+python3 -m venv venv
+venv/bin/pip install build twine bumpver
+```
 
 ```sh
 source venv/bin/activate
@@ -35,7 +41,7 @@ python -m build                  # builds dist/*.whl and dist/*.tar.gz
 twine upload dist/*              # publish to PyPI
 ```
 
-- **Versioning:** `bumpver` updates the version in both `pyproject.toml` (`version` and `current_version`) and `src/gjcode/__init__.py`. It's configured with `commit = false`, `tag = false`, and `push = false`, so commits are made by hand and there are no git tags. Commits for releases have used the version as the message (e.g. `v0.0.13`).
+- **Versioning:** `bumpver` updates the version in both `pyproject.toml` (`version` and `current_version`) and `src/gjcode/__init__.py`. It's configured with `commit = false`, `tag = false`, and `push = false`, so commits are made by hand and there are no git tags.
 - **Clear `dist/` before building** a new release, or `twine upload dist/*` will try to re-upload old versions.
 - **Everything under `src/gjcode/` ships:** setuptools packages every module in that directory, so keep scratch and local-only files out of it.
 - **PyPI metadata is per release:** changes to `pyproject.toml` metadata (description, URLs, and so on) only show on PyPI once a new version is published.
