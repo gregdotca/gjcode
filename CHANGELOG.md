@@ -1,9 +1,21 @@
 # Changelog
 
-## Unreleased
+## 0.0.14
 
 ### 2026-10-10
 
+- Bump the version to 0.0.14 (`pyproject.toml` and
+  `src/gjcode/__init__.py`) for this release.
+- Tidy the package metadata in `pyproject.toml`:
+  - Use the current license format (`license = "MIT"`) and drop the
+    MIT license classifier, which the new format replaces. This needs
+    setuptools 77 or later, and clears a deprecation warning when
+    building.
+  - Require only `setuptools>=77` to build; `wheel` isn't needed.
+  - Remove the commented-out `random` dependency. `random` is part of
+    Python's standard library.
+  - Raise the minimum Python version from 3.7 to 3.9. 3.7 has been
+    end-of-life since 2023.
 - Remove `rand_print()` from `gjcode.rand`. It only printed the result
   of `rand()`, so callers can use `print(rand(...))` instead. This
   breaks any code that calls `gjcode.rand.rand_print`; `grandom` only

@@ -1,22 +1,18 @@
 [build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "gjcode"
-version = "0.0.13"
+version = "0.0.14"
 authors = [
   { name="Greg Chetcuti", email="greg@chetcuti.com" },
 ]
-license = { text = "MIT" }
+license = "MIT"
 description = "A collection of my personal Python code"
 readme = "README.md"
-# dependencies = [
-#     "random"
-# ]
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 classifiers = [
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -27,7 +23,7 @@ classifiers = [
 "Bug Tracker" = "https://github.com/gregdotca/gjcode/issues"
 
 [tool.bumpver]
-current_version = "0.0.13"
+current_version = "0.0.14"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "Bump version {old_version} -> {new_version}"
 commit = false
