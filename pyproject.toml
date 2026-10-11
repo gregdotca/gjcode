@@ -23,8 +23,8 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/chetcuti/gjcode"
-"Bug Tracker'" = "https://github.com/chetcuti/gjcode/issues"
+"Homepage" = "https://github.com/gregdotca/gjcode"
+"Bug Tracker" = "https://github.com/gregdotca/gjcode/issues"
 
 [tool.bumpver]
 current_version = "0.0.13"

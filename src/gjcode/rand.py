@@ -17,14 +17,9 @@ def rand(options=default_options, rolls=default_rolls, details=default_details):
     return result_return
 
 
-def rand_print(options=default_options, rolls=default_rolls, details=default_details):
-    """Run the main randomizer program (Print)"""
-    print(rand(options, rolls, details))
-
-
 def get_headers(options, rolls):
     """Get the headers"""
-    headers = f"Options: {options}\n"
+    headers = f"Options: {options:,}\n"
     headers += f"Rolls: {rolls:,}"
     return headers
 
