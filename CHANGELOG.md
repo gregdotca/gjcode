@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### 2026-10-12
+
+- Add `.github/dependabot.yml` so Dependabot checks the Python
+  dependencies in `pyproject.toml` once a month and opens one grouped
+  pull request when updates are out. New releases wait 7 days before
+  they're proposed; security updates aren't held back by that wait.
+  The package has no runtime dependencies yet, so this covers any
+  added later. It isn't part of the package, so it needs no release.
+
 ### 2026-10-10
 
 - Update the venv notes in `CLAUDE.md`. The old venv was built on
