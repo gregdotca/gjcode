@@ -6,7 +6,7 @@ updated: 2026-10-10
 
 # AI Code Rating
 
-**ACR B0a** (Maintainer: Experienced · AI Share: None · Oversight: Verified)
+**[ACR B0a](https://aicoderating.com/B0a/)** (Maintainer: Experienced · AI Share: None · Oversight: Verified)
 
 This project is rated with [AI Code Rating](https://aicoderating.com/spec/0.1/), spec version 0.1.
 

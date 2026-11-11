@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### 2026-11-11
+
+- Link the rating in `ACR.md` to its page on aicoderating.com.
+
 ### 2026-10-12
 
 - Add `.github/dependabot.yml` so Dependabot checks the Python
